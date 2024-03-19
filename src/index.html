@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">   
 
+
     <title>Ngopi</title>
 </head>
-<body>
+<body >
     <!-- Header -->
-   <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
+   <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full top-0 start-0 z-20 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/assets/logo-ngopi.svg" class="h-8" alt="Ngopi Logo" />
@@ -37,7 +38,7 @@
                 <a href="#products" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
             </li>
             <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+                <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
             </li>
             <li>
                 <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Testimonial</a>
@@ -52,7 +53,7 @@
     <!-- Header End -->
 
     <!-- Hero -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero section mt-[5rem]">
         <div class="container mx-auto text-center flex flex-col justify-center items-center gap-[80px] ">
             <div class="max-w-[600px] justify-center items-center flex flex-col">
                 <h1 class="h1 mb-3">Enjoy Your Favorite Coffee with Ngopi</h1>
@@ -78,9 +79,43 @@
     </div>
     <!-- Divider -->
 
+    <!-- About -->
+    <section id="about" class="about section">
+        <div class="container mx-auto text-center flex flex-col justify-center items-center ">
+            <div class="mb-10">
+                <p class="text-[24px] text-secondary font-light">About Us</p>
+                <h3 class="h3">Why We Are The Best</h3>
+            </div>
+            <div class="flex flex-col gap-12 lg:flex-row-reverse ">
+                <div class="w-full flex items-center justify-center hover:scale-[1.03] transition-all duration-500">
+                    <img src="/assets/img-about.png" alt="">
+                </div>
+                <div class="flex flex-col gap-6 self-center items-center text-center lg:text-left lg:items-start max-w-[600px]">
+                    <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.</p>
+                    <a href="#">
+                        <button class="btn btn-lg btn-accent rounded-tr-2xl rounded-bl-2xl group">Read more
+                            <i class="ri-arrow-right-down-line text-2xl ml-2 group-hover:-rotate-45 transition-all duration-500"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Divider -->
+    <div class="px-[50px] flex justify-center">
+        <svg width="1120" height="1" viewBox="0 0 1120 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M560 1C225.23 0.900198 0 0.71365 0 0.5C0 0.28635 225.23 0.0998016 560 0C894.77 0.0998016 1120 0.28635 1120 0.5C1120 0.71365 894.77 0.900198 560 1Z" fill="#282A3A"/>
+        </svg>            
+    </div>
+    <!-- Divider -->
+
     <!-- Products -->
     <section id="products" class="products section">
-        <div class="container mx-auto text-center justify-center items-center">
+        <div class="container mx-auto text-center flex flex-col justify-center items-center">
             <div class="mb-20">
                 <p class="text-[24px] text-secondary font-light">Our Products</p>
                 <h3 class="h3">From Top Quality Materials</h3>
@@ -89,10 +124,10 @@
             justify-between items-center">
                 <!-- card -->
                 <div class="w-auto min-h-[480px] mb-4 text-left border border-transparent rounded-tr-[41px]
-                hover:border-[#99999950] hover:-translate-y-2 transition-all duration-500">
+                hover:border-[#99999950] hover:-translate-y-2 transition-all duration-500 group">
                     <!-- card image -->
                     <div>
-                        <img src="/assets/kopi-1.png" alt="">
+                        <img src="/assets/kopi-1.png" alt="" class="group-hover:scale-[1.03] group-hover:rotate-3 transition-all duration-500 w-full">
                     </div>
                     <!-- card content -->
                     <div class="p-6 gap-4 flex flex-col">
@@ -113,10 +148,10 @@
                 </div>
                 <!-- card -->
                 <div class="w-auto min-h-[480px] mb-4 text-left border border-transparent rounded-tr-[41px]
-                hover:border-[#99999950] hover:-translate-y-2 transition-all duration-500">
+                hover:border-[#99999950] hover:-translate-y-2 transition-all duration-500 group">
                     <!-- card image -->
                     <div>
-                        <img src="/assets/kopi-1.png" alt="">
+                        <img src="/assets/kopi-1.png" alt="" class="group-hover:scale-[1.03] group-hover:rotate-3 transition-all duration-500 w-full">
                     </div>
                     <!-- card content -->
                     <div class="p-6 gap-4 flex flex-col">
@@ -137,10 +172,10 @@
                 </div>
                 <!-- card -->
                 <div class="w-auto min-h-[480px] mb-4 text-left border border-transparent rounded-tr-[41px]
-                hover:border-[#99999950] hover:-translate-y-2 transition-all duration-500">
+                hover:border-[#99999950] hover:-translate-y-2 transition-all duration-500 group">
                     <!-- card image -->
                     <div>
-                        <img src="/assets/kopi-1.png" alt="">
+                        <img src="/assets/kopi-1.png" alt="" class="group-hover:scale-[1.03] group-hover:rotate-3 transition-all duration-500 w-full">
                     </div>
                     <!-- card content -->
                     <div class="p-6 gap-4 flex flex-col">
@@ -161,10 +196,10 @@
                 </div>
                 <!-- card -->
                 <div class="w-auto min-h-[480px] mb-4 text-left border border-transparent rounded-tr-[41px]
-                hover:border-[#99999950] hover:-translate-y-2 transition-all duration-500">
+                hover:border-[#99999950] hover:-translate-y-2 transition-all duration-500 group">
                     <!-- card image -->
                     <div>
-                        <img src="/assets/kopi-1.png" alt="">
+                        <img src="/assets/kopi-1.png" alt="" class="group-hover:scale-[1.03] group-hover:rotate-3 transition-all duration-500 w-full">
                     </div>
                     <!-- card content -->
                     <div class="p-6 gap-4 flex flex-col">
